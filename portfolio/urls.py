@@ -28,8 +28,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', portfolio_views.index, name="home"),
+    path('about/', portfolio_views.about, name="about-me"),
     path('contact/', portfolio_views.contact, name="contact"),
     path('projects/', projects_views.show_projects, name="projects"),
+
 
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
