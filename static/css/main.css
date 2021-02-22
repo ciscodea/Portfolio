@@ -2,6 +2,21 @@ html, body {
     background: #fafafa;
     height: 100%;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-custom{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,.125);
+    
+}
+
+.link-custom{
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    letter-spacing: .2em;
+    font-size: 0.80rem;
 }
 
