@@ -5,7 +5,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.navbar-custom{
+.navbar-custom {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: rgba(0,0,0,.125);
