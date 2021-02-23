@@ -1,5 +1,5 @@
 html, body {
-    background: #fafafa;
+    background: #fff;
     height: 100%;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -19,4 +19,42 @@ html, body {
     letter-spacing: .2em;
     font-size: 0.80rem;
 }
+
+.footer {
+   
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    color: #aaa;
+    font-size: 0.9rem;
+    box-sizing: unset;
+}
+
+.footer-border {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0,0,0,.125);
+
+}
+
+.footer-message {
+    text-align: center;
+}
+.footer-social {
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer-social a {
+    color: #aaa;
+    padding: 0px 3px 0px 3px;
+}
+.footer-social a:hover {
+    color: blue;
+}
+
 
