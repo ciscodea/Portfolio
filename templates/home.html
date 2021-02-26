@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block head_content %}
     <title>Pedro López Oviedo</title>
@@ -6,13 +7,22 @@
 
 {% block header %}
     <header class="header header-title">
-       <h1 class="ml11">
-            <span class="text-wrapper">
-                <span class="line line1"></span>
-                <span class="letters">Hello World!</span>           
-            </span>
-        </h1>
+        <div class="row">
+        <div class="col-md-4 col-xl-6">
+            <img class="rounded-circle profile-img img-thumbnail" src="{% static 'img/profile.jpg' %}" alt="">
+        </div>
+        <div class="col-md-4 col-xl-6">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Hello World!</span>           
+                </span>
+            </h1>
          <p class="header-text">I am Pedro. <br> A Software Engineer fullstack web developer!</p>
+        
+        </div>
+        </div>
+        
     </header>
 {% endblock %}
 {%block container %}
