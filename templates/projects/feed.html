@@ -4,22 +4,40 @@
     <title>Projects</title>
 {% endblock %}
 
+{% block header %}
+     <header class="header header-title">
+       <h1 class="ml11 vertical-center">
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">My Work</span>    
+            </span>
+        </h1>
+        <p class="header-text">This is some of my experience</p>
+    </header>
+{% endblock %}
+
 {%block container %}
-
-    <h1>Projects</h1>
-
     <div class="row">
         {% for project in projects %}
-            <div class="col-lg-3 col-md-4 offset-lg-1">
-               
-                <img class="img-fluid border rounded" src="{{ project.image.url }}" alt="{{ project.title }}">               
+            <div class="col-md-4 col-xl-6">
+               <div class="card mb-4  box-shadow">
+                    <img class="img-tubmnail border rounded img-project" src="{{ project.image.url }}" alt="{{ project.title }}">  
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h4>{{project.title}}</h4>
+                            <p class="text-justify">{{project.description}}</p> 
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button class="btn btn-sm btn-outline-secondary"><a href="#">Demo</a></button>
+                                <button class="btn btn-sm btn-outline-secondary"><a href="#">Github</a></button>
+                            </div>
+                        
+                        </div>     
+                    </div>             
+               </div>
             </div>
-            <div class="col-lg-7 col-md-8">
-                 <h2 class="section-heading">{{project.title}}</h2>
-                  <p class="text-justify">{{project.description}}</p> 
-            </div>
-        {%  endfor %}
-    
+        {%  endfor %} 
     </div>
 
 

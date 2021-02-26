@@ -1,8 +1,6 @@
 body {
     background: #fff;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: .01rem;
-    line-height: 1.75rem;
     margin-bottom: 60px;
 }
 
@@ -30,8 +28,18 @@ html {
     background: #fafafa;
     width: 100%;
     height: 300px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    margin-bottom: 30px;
     text-align: center;
-
+}
+.header-title {
+    padding-top: 40px;
+}
+.header-text {
+    color: #aaa;
+    padding-top: 50px;
+    font-size: 25px;
+    
 }
 
 
@@ -66,6 +74,11 @@ html {
 }
 .footer-social a:hover {
     color: blue;
+}
+
+.img-project {
+    min-width: 100%;
+    height: 250px;
 }
 
 
