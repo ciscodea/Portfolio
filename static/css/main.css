@@ -1,8 +1,14 @@
-html, body {
+body {
     background: #fff;
-    height: 100%;
-    width: 100%;
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: .01rem;
+    line-height: 1.75rem;
+    margin-bottom: 60px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 .navbar-custom {
@@ -28,18 +34,15 @@ html, body {
 
 }
 
+
+
 .footer {
-   
     position: absolute;
-    left: 0;
+    margin-top: 10px;
     bottom: 0;
     height: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     width: 100%;
     color: #aaa;
-    font-size: 0.9rem;
-    box-sizing: unset;
 }
 
 .footer-border {

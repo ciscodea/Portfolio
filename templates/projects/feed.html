@@ -6,5 +6,21 @@
 
 {%block container %}
 
-    <h1>En esta pagina se mostraran los proyectos</h1>
+    <h1>Projects</h1>
+
+    <div class="row">
+        {% for project in projects %}
+            <div class="col-lg-3 col-md-4 offset-lg-1">
+               
+                <img class="img-fluid border rounded" src="{{ project.image.url }}" alt="{{ project.title }}">               
+            </div>
+            <div class="col-lg-7 col-md-8">
+                 <h2 class="section-heading">{{project.title}}</h2>
+                  <p class="text-justify">{{project.description}}</p> 
+            </div>
+        {%  endfor %}
+    
+    </div>
+
+
 {% endblock %}
