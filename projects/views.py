@@ -9,6 +9,6 @@ from projects.models import Project
 
 
 def show_projects(request):
-    project = Project.objects.all()
+    project = Project.objects.all().order_by('-created')
 
     return render(request, 'projects/feed.html', {'projects' : project})

@@ -1,10 +1,46 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block head_content %}
     <title>About me</title>
 {% endblock %}
 
+{% block header %}
+     <header class="header header-title">
+       <h1 class="ml11 vertical-center">
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters">About me</span>    
+            </span>
+        </h1>
+        <p class="ml11">This is something about  me</p>
+    </header>
+{% endblock %}
+
 {%block container %}
 
-    <h1>esta pagina sera para el about me </h1>
+<div class="row">
+    <div class="col-md-4 col-xl-6">
+      <img
+        class="img-thumbnail" width="300px"
+        src="{% static 'img/about.jpg' %}"
+        alt="pedros photo"
+      />
+    </div>
+
+    <div class="col-md-4 col-xl-6">
+        <h3 class="header-text">Hello world!</h3>
+    <p class="text-justify header-text">
+        I am a Software Engineer from México. I have ended my carrer 1 year ago. I have no get my title yet.
+        but i think thats not necesary for make things that i can imagine.
+        I love creating and learning about tecnology. 
+        Currently i am learning about web development, somenthing that i am falling in love with.
+        Now, i am a full stack web developer with 1 year experience.
+        but i won't stop learning btw. 
+    </p>
+    </div>
+
+
+</div>
+    
+    
 {% endblock %}

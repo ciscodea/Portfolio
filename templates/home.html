@@ -1,30 +1,77 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} 
+{% load static %} 
 
 {% block head_content %}
-    <title>Pedro López Oviedo</title>
-{% endblock %}
+  <title>Pedro López Oviedo</title>
+{% endblock %} 
 
 {% block header %}
-    <header class="header header-title">
-        <div class="row">
-        <div class="col-md-4 col-xl-6">
-            <img class="rounded-circle profile-img img-thumbnail" src="{% static 'img/profile.jpg' %}" alt="">
-        </div>
-        <div class="col-md-4 col-xl-6">
-            <h1 class="ml11">
-                <span class="text-wrapper">
-                    <span class="line line1"></span>
-                    <span class="letters">Hello World!</span>           
-                </span>
-            </h1>
-         <p class="header-text">I am Pedro. <br> A Software Engineer fullstack web developer!</p>
-        
-        </div>
-        </div>
-        
-    </header>
-{% endblock %}
-{%block container %}
+<header class="header header-title">
+  <div class="row">
+    <div class="col-md-4 col-xl-6">
+      <img
+        class="rounded-circle profile-img img-thumbnail"
+        src="{% static 'img/profile.jpg' %}"
+        alt=""
+      />
+    </div>
+    <div class="col-md-4 col-xl-6">
+      <h1 class="ml11">
+        <span class="text-wrapper">
+          <span class="line line1"></span>
+          <span class="letters">Hello World!</span>
+        </span>
+      </h1>
+      <p class="header-text">
+        I am Pedro. <br />
+        A Software Engineer fullstack web developer!
+      </p>
+    </div>
+  </div>
+</header>
 
+{% endblock %} 
+
+{%block container %} 
+  <h2 class="ml11">These are some of my skills <i class="fas fa-rocket"></i></h2>
+    <br>
+   
+  <div class="row">
+    <div class="col-md-6 border-skill">
+      <ul class="list-group list-group-flush skill-background ">
+      <li class="list-group-item item-title skill-background ">Back-end <i class="fab fa-python"></i></li>
+      <li class="list-group-item item-li skill-background ">Django <i class="fas fa-check-square"></i></li>
+      <li class="list-group-item item-li skill-background ">Flask <i class="fas fa-check-square"></i></li>
+      </ul>
+   
+    </div>
+    <div class="col-md-6"></div>
+    <div class="col-md-6"></div>
+
+    <div class="col-md-6 border-skill">
+      <ul class="list-group list-group-flush skill-background">
+      <li class="list-group-item item-title skill-background">Front-end <i class="fab fa-js"></i></li>
+      <li class="list-group-item item-li skill-background">React <i class="fas fa-check-square"></i></li>
+      <li class="list-group-item item-li skill-background">Javascript<i class="fas fa-check-square"></i></li>
+      <li class="list-group-item item-li skill-background">Css3 <i class="fas fa-check-square"></i></li>
+      <li class="list-group-item item-li skill-background">Bootstrap <i class="fas fa-check-square"></i></li>
+    </ul>
+    
+    </div>
+
+    
+    <div class="col-md-6 border-skill">
+      <ul class="list-group list-group-flush">
+      <li class="list-group-item list item-title skill-background">Ohers <i class="fab fa-jsfiddle"></i></li>
+      <li class="list-group-item item-li skill-background">Python<i class="fas fa-check-square"></i></li>
+      <li class="list-group-item item-li skill-background">Javascript<i class="fas fa-check-square"></i></li>
+      <li class="list-group-item item-li skill-background">PHP<i class="fas fa-check-square"></i></li>
+      <li class="list-group-item item-li skill-background">Java<i class="fas fa-check-square"></i></li>
+      <li class="list-group-item item-li skill-background">MySQl<i class="fas fa-check-square"></i></li>
+      <li class="list-group-item item-li skill-background">Git & Github<i class="fas fa-check-square"></i></li>
+    </ul>
+  
+    </div>
+    
+  </div>
 {% endblock %}
