@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary'
 
     # local apps
     'projects'
@@ -139,3 +140,12 @@ MEDIA_URL = '/media/'
 
 LOGIN_URL = '/users/login/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'he9xujseo',
+    'API_KEY': '254211853684524',
+    'API_SECRET': 'SrF6WiXygiXs3UpkHH-hk8iIFAc',
+}
