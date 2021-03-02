@@ -141,6 +141,9 @@ MEDIA_URL = '/media/'
 LOGIN_URL = '/users/login/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+
+
+# Clodinary for storage images
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
