@@ -1,5 +1,6 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
+
 class Project(models.Model):
 
     title = models.CharField(blank=True, max_length=200)
