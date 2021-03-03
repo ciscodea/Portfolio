@@ -116,3 +116,11 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 .row {
   margin-right: 0px;
 }
+
+
+.rocket-img {
+  width: 350px;
+  height: 300px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
