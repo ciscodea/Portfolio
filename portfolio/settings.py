@@ -27,6 +27,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+# Secure redirect https
+SECURE_SSL_REDIRECT = True
 
 # Application definition
 
